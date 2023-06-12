@@ -1,0 +1,64 @@
+button {
+  background: black;
+  color: white;
+}
+
+body {
+  background: #128fc2;
+  font-family: "Sans-serif", "Arial";
+  font-size: 26px;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+.circle-red {
+  width: 350px;
+  height: 350px;
+  background: red;
+  border-radius: 50%;
+}
+
+.circle-green {
+  width: 200px;
+  height: 200px;
+  background: green;
+  border-radius: 50%;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+form .input {
+  border-radius: 20px;
+  padding: 10px;
+}
+form .submit {
+  border-radius: 20px;
+  padding: 10px;
+  background: yellow;
+}
+
+#features {
+  list-style-type: none;
+  width: 300px;
+  margin: 0 auto;
+}
+#features li {
+  font-size: 20px;
+}
+#features li a {
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+  display: block;
+}
+#features li a:hover {
+  color: red;
+}
+
+/*# sourceMappingURL=sass-intro.css.map */

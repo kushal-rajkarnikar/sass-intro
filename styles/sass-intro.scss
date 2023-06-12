@@ -1,0 +1,81 @@
+$primary-color: #128fc2;
+$primary-font: "Sans-serif", "Arial";
+
+button {
+  background: black;
+  color: white;
+}
+
+body {
+  background: $primary-color;
+  font-family: $primary-font;
+  font-size: 26px;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+//mixins
+
+@mixin form-element {
+  border-radius: 20px;
+  padding: 10px;
+}
+
+@mixin circle($width, $height, $color) {
+  // We passed $width to the width property
+  width: $width;
+
+  // We passed $height to the height property
+  height: $height;
+
+  // And we passed $color to width background-color
+  background: $color;
+
+  // no argument for this property, beacuase it's gonna be the
+  // same in both circles
+  border-radius: 50%;
+}
+
+.circle-red {
+  // circle ($width,$height,$color);
+  @include circle(350px, 350px, red);
+}
+
+.circle-green {
+  // circle ($width,$height,$color);
+  @include circle(200px, 200px, green);
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  .input {
+    @include form-element;
+  }
+  .submit {
+    @include form-element;
+    background: yellow;
+  }
+}
+
+#features {
+  list-style-type: none;
+  width: 300px;
+  margin: 0 auto;
+  li {
+    font-size: 20px;
+    a {
+      color: white;
+      text-decoration: none;
+      padding: 20px;
+      display: block;
+      &:hover {
+        color: red;
+      }
+    }
+  }
+}

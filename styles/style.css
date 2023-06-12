@@ -1,0 +1,28 @@
+body {
+  background: #e5e5e5;
+  font-family: "Sans-serif", "Arial";
+  font-size: 24px;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+#features {
+  list-style-type: disc;
+  width: 300px;
+  margin: 0 auto;
+}
+#features li {
+  font-size: 20px;
+}
+#features li a {
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+  display: block;
+}
+#features li a:hover {
+  color: red;
+}/*# sourceMappingURL=style.css.map */

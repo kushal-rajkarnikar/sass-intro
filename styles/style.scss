@@ -1,0 +1,31 @@
+$primary-color: #e5e5e5;
+$primary-font: "Sans-serif", "Arial";
+
+body {
+  background: $primary-color;
+  font-family: $primary-font;
+  font-size: 24px;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+#features {
+  list-style-type: disc;
+  width: 300px;
+  margin: 0 auto;
+  li {
+    font-size: 20px;
+    a {
+      color: white;
+      text-decoration: none;
+      padding: 20px;
+      display: block;
+      &:hover {
+        color: red;
+      }
+    }
+  }
+}
